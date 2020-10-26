@@ -1,2 +1,0 @@
-# Tutorials
-Tutorial Softwares

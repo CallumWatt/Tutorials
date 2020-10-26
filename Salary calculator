@@ -1,0 +1,67 @@
+package Tutorial0;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class wk5tut1 {
+
+	public static void main(String[] args) {
+		Scanner kboard = new Scanner(System.in);
+			int number = 0;
+			String name;
+			String town;
+			double salary;
+			double newsalary;
+			String readynow;
+			double i = 0;
+			DecimalFormat dc = new DecimalFormat("#.00");
+				
+		System.out.println("Are you ready? y or n");
+		readynow = kboard.next();
+				
+			if (readynow !="y");
+				{
+					for(number = 0; i<999; i++) {
+						
+					System.out.println("Are you ready? y or n");
+					readynow = kboard.next();
+				}
+					
+				
+				if(readynow == "y");
+				{
+			
+				do {
+					
+				
+				System.out.println("Please enter customer name");
+				name = kboard.next();
+				System.out.println("Customer name is "+ name);
+				
+				System.out.println("Please enter customer town");
+				town = kboard.next();
+				System.out.println(name);
+				System.out.println(town);
+				
+				System.out.println("Please enter salary");
+				salary = kboard.nextDouble();
+				newsalary = (salary + 100);
+				System.out.println(name);
+				System.out.println(town);
+				System.out.println("New salary "+ dc.format(newsalary));
+				
+				number ++;
+				
+		        } while (number < 3);
+				
+				if (readynow !="y");
+				{
+					for(number = 0; i<999; i++) {
+						
+						System.out.println("Are you ready? y or n");
+						readynow = kboard.next();
+					}
+				}
+
+	}
+	}
+}
+}
